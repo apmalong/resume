@@ -15,7 +15,7 @@ Calgary, AB | apmalong@gmail.com
 ## Technical Skills
 
 - **Cloud & Data Platforms:** AWS, Snowflake, Amazon S3, Athena, Glue Data Catalog, Redshift, Lake Formation, DynamoDB, EventBridge, Lambda
-- **Data Engineering:** Apache Airflow, Amazon MWAA, dbt, Apache Iceberg, ECS Fargate, Parquet, ETL/ELT, incremental processing, dimensional modeling
+- **Data Engineering:** Apache Airflow, Amazon MWAA, dbt, Apache Iceberg, PySpark, AWS Glue, ECS Fargate, Parquet, ETL/ELT, incremental processing, dimensional modeling
 - **Programming / DevOps:** Python, SQL, T-SQL, PowerShell, Terraform, Terragrunt, GitHub Actions, Docker, CI/CD
 - **Architecture & Operations:** Multi-tenant data platforms, medallion architecture, data governance, RBAC, SLOs, observability, OpenTelemetry, FinOps, cost attribution
 - **AI & Analytics:** Model Context Protocol (MCP), Amazon Bedrock, Snowflake Cortex, Power BI, Tableau, SSRS, SSIS, SSAS
@@ -31,9 +31,12 @@ Calgary, AB | apmalong@gmail.com
 - As sole infrastructure engineer, migrated the legacy SQL Server warehouse to an EventBridge-driven, serverless Redshift architecture, provisioning an isolated Redshift instance per client to enforce tenant separation.
 - Partnered directly with the Director of Data to design the underlying data models, translating business reporting requirements into production dimensional schemas.
 
-**Single-Tenant Platform Migration** _(Q4 2023 - Q2 2024)_
+**Single-Tenant Platform Migration** _(Q4 2023 - Q1 2024)_
 - As sole developer, migrated a customized, feature-limited branch of "Kernel" (StellarAlgo's Airflow/MWAA, Glue Data Catalog, S3, and Athena-based ELT platform) into an isolated AWS account for a $600K/year client requiring full data separation from other tenants.
 - Scoped the customization to run on roughly $25K/year in infrastructure costs with only about 4 hours per month of ongoing data engineering support, well below the overhead of a standard multi-tenant deployment.
+
+**Glue PySpark Ingestor** _(Q1 2024 - Q2 2024)_
+- Replaced an underperforming Python-based ingestor with a PySpark job on AWS Glue after it proved too slow for the client's initial historical load, enabling ingestion of 5B+ rows into Kernel within a practical timeframe.
 
 **Kernel Platform Operations** _(Q3 2024 - Q2 2025)_
 - Joined the Kernel platform team to support day-to-day operations of StellarAlgo's core Airflow/MWAA, Glue Data Catalog, S3, and Athena-based ELT pipelines.
