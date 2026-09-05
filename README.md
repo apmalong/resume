@@ -2,7 +2,7 @@
 
 **Senior Data Engineer | Data Platform Engineering**
 
-Calgary, AB | apmalong@gmail.com | 403-909-5774
+Calgary, AB | apmalong@gmail.com
 
 ## Professional Summary
 
